@@ -49,3 +49,6 @@
 
 [pull]
   rebase = false
+[user]
+	email = Trancoso.mathieu@gmail.com
+	name = Mathieu Trancoso
