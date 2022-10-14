@@ -5,5 +5,43 @@ alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/m
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
-# NOTE: On Q3 2021, Le Wagon decided to change the Web Dev curriculum default text editor
-alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' && code ."
+# My aliases
+alias rs="rails s"
+alias rc="rails c"
+alias rr="rails routes"
+
+# Heroku
+alias hlogs="heroku logs -t -n 1500"
+alias ho="heroku open"
+alias hrc="heroku run rails c"
+
+# Projects and Directories
+alias wulfens="cd /home/wulfens/code/Wulfens"
+alias livecodes="cd /home/wulfens/code/lewagon/livecodes"
+alias dotfiles="cd /home/wulfens/code/Wulfens/dotfiles"
+alias deluded="cd /home/wulfens/code/Wulfens/Deluded"
+alias fsc="cd /home/wulfens/code/Wulfens/fullstack-challenges"
+
+
+
+# Alias function
+function gitall() {
+    git add .
+    if [ "$1" != "" ]
+      then
+        git commit -m "$1"
+      else
+        git commit -m update
+    fi
+    git push origin HEAD
+}
+function gitprout() {
+    git add .
+    if [ "$1" != "" ]
+      then
+        git commit -m "$1"
+      else
+        git commit -m update
+    fi
+    git push origin HEAD
+}
