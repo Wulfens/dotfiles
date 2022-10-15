@@ -17,7 +17,7 @@ alias hrc="heroku run rails c"
 
 # Projects and Directories
 alias wulfens="cd /home/wulfens/code/Wulfens"
-alias livecodes="cd /home/wulfens/code/lewagon/livecodes"
+alias lcs="cd /home/wulfens/code/lewagon/livecodes"
 alias dotfiles="cd /home/wulfens/code/Wulfens/dotfiles"
 alias deluded="cd /home/wulfens/code/Wulfens/Deluded"
 alias fsc="cd /home/wulfens/code/Wulfens/fullstack-challenges"
