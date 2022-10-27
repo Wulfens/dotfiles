@@ -4,11 +4,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Useful oh-my-zsh plugins for Le Wagon bootcamps
-<<<<<<< HEAD
 plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
-=======
-plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv)
->>>>>>> 9ba422eccf6bddbeb981b086e6f2021704430f22
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -67,17 +63,8 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-<<<<<<< HEAD
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 sudo /etc/init.d/postgresql start
 export DISPLAY=192.168.80.1:0
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
-=======
-
 export BUNDLER_EDITOR=code
 export EDITOR=code
-
-# Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
->>>>>>> 9ba422eccf6bddbeb981b086e6f2021704430f22
