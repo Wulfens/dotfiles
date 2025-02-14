@@ -15,6 +15,7 @@ ZSH_DISABLE_COMPFIX=true
 # Actually load Oh-My-Zsh
 source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
+unalias lt # we need `lt` for https://github.com/localtunnel/localtunnel
 
 # Load rbenv if installed (to manage your Ruby versions)
 export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
@@ -61,10 +62,13 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
 
 # Encoding stuff for the terminal
+
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-sudo /etc/init.d/postgresql start
-export DISPLAY=192.168.80.1:0
-export BUNDLER_EDITOR=code
-export EDITOR=code
+
+export BUNDLER_EDITOR=windsurf
+export EDITOR=windsurf
+
+# Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
+sudo /etc/init.d/postgresql start

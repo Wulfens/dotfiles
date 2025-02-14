@@ -9,6 +9,7 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 alias rs="rails s"
 alias rc="rails c"
 alias rr="rails routes"
+alias ws="windsurf ."
 
 # Heroku
 alias hlogs="heroku logs -t -n 1500"
@@ -17,10 +18,11 @@ alias hrc="heroku run rails c"
 
 # Projects and Directories
 alias wulfens="cd /home/wulfens/code/Wulfens"
-alias lcs="cd /home/wulfens/code/lewagon/livecodes"
+alias lw="cd /home/wulfens/code/lewagon"
 alias dotfiles="cd /home/wulfens/code/Wulfens/dotfiles"
 alias deluded="cd /home/wulfens/code/Wulfens/Deluded"
 alias fsc="cd /home/wulfens/code/Wulfens/fullstack-challenges"
+alias keepr="cd /home/wulfens/code/Wulfens/Keepr"
 
 
 
@@ -35,6 +37,7 @@ function gitall() {
     fi
     git push origin HEAD
 }
+
 function gitprout() {
     git add .
     if [ "$1" != "" ]
